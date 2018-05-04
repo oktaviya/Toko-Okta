@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+           xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="26dp"
+          android:paddingRight="26dp"
+           android:orientation="vertical"
+         android:paddingTop="16dp"
+    android:background="@drawable/bunga">
+    tools:context="com.example.okta.tokooktamakmur.MainActivity">
+
+    <LinearLayout
+             android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+               android:orientation="vertical">
+               <LinearLayout
+                  android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@color/colorPrimary"
+                       android:text="Nama Pelanggan :  "
+                       android:textColor="@android:color/holo_blue_light"
+                       android:textStyle="bold" />
+               <EditText
+                      android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                       android:id="@+id/namapelanggan"
+                      android:text="" />
+               </LinearLayout>
+              <LinearLayout
+                   android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorPrimaryDark"
+                      android:backgroundTint="@color/colorPrimary"
+                      android:text="ID Barang :  "
+                      android:textColor="@android:color/holo_blue_light"
+                      android:textStyle="bold" />
+                   <EditText
+                      android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/idbarang"
+                      android:text="" />
+              </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@color/colorPrimary"
+                       android:backgroundTint="@color/colorPrimary"
+                       android:text="Nama Barang :  "
+                       android:textColor="@android:color/holo_blue_light"
+                       android:textStyle="bold" />
+                  <EditText
+                    android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                     android:id="@+id/namabarang"
+                       android:text="" />
+              </LinearLayout>
+               <LinearLayout
+                 android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@color/colorPrimary"
+                       android:text="Jumlah Beli:  "
+                       android:textColor="@android:color/holo_blue_light"
+                       android:textStyle="bold" />
+                 <EditText
+                     android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/jumlahbeli"
+                     android:text=""
+                     android:inputType="number"/>
+              </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@color/colorPrimary"
+                     android:text="Harga : Rp "
+                     android:textColor="@android:color/holo_blue_light"
+                     android:textStyle="bold" />
+                  <EditText
+                       android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                       android:id="@+id/harga"
+                       android:text=""
+                      android:inputType="number"
+                     android:layout_marginBottom="8dp" />
+          </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@color/colorPrimary"
+                     android:text="Uang Bayar: Rp  "
+                     android:textColor="@android:color/holo_blue_light"
+                     android:textStyle="bold" />
+                 <EditText
+                      android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    android:id="@+id/uangbayar"
+                   android:text=""
+                    android:inputType="number"/>
+             </LinearLayout>
+
+        <Button
+            android:id="@+id/tombol1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="PROSES"
+            android:textColor="#1E90FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalbelanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Total Belanja "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uangkembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Uang Kembali "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Bonus"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Keterangan "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+           <LinearLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/tombol2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorPrimary"
+                   android:text="CLEAR"
+                   android:textColor="@android:color/holo_blue_light"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/tombol3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@color/colorPrimary"
+                   android:text="EXIT"
+                   android:textColor="@android:color/holo_blue_light"
+                   android:textStyle="bold" />
+              </LinearLayout>
+         </LinearLayout>
+      </ScrollView>
